@@ -1,0 +1,338 @@
+* {
+    box-sizing: border-box;
+}
+
+@media (min-width:450px) and (max-width:800px) {
+    nav {
+        position: absolute;
+        z-index: 99;
+        background-color: rgba(0,0,0,0.8);
+        width: 70vw;
+        height: calc(100vh - 100px);
+        top: 100px;
+        right: 0;
+        display: none;
+    }
+
+    .menu ul {
+        flex-direction: column;
+    }
+
+    .menu li a {
+        display: block;
+        font-weight: bold;
+        height: 80px;
+        font-size:25px;
+        margin-left: 30px;
+
+    }
+
+    .menu li.active a {
+        color: #B28756;
+        border: 0;
+    }
+
+    .menu .open-menu {
+        width: 40px;
+        height: auto;
+        margin-right: 30px;
+        display: block;
+    }
+
+    .logo {
+        margin-left: 30px;
+    }
+
+    .section-aboutus {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .section-aboutus--left {
+        margin: 0px 30px 30px 30px;
+    }
+
+    .section-services {
+        flex-wrap: wrap;
+    }
+
+    .section-service {
+        min-width: 50%;
+    }
+    
+    .section-service:nth-child(1) {
+        border-left: 0;
+    }
+
+    .section-team {
+        max-width: 580px;
+    }
+    .section-mapa .section-mapa-content .mapa-content {
+        padding: 30px;
+    }
+
+    .section-content-bloc {
+        flex: 1;
+    }
+
+    /* CSS - RESPONSIVE TABLET - THE END */
+
+}
+
+@media (max-width:450px) {
+    nav {
+        display: none;
+        position: absolute;
+        z-index: 99;
+        background-color: rgba(0,0,0,0.8);
+        width: 80vw;
+        height: calc(100vh - 100px);
+        top: 100px;
+        right: 0;
+    }
+
+    .menu ul {
+        flex-direction: column;
+    }
+
+    .menu li a {
+        display: block;
+        font-weight: bold;
+        height: 60px;
+        font-size:15px;
+        margin-left: 30px;
+        border-bottom: 0;
+
+    }
+
+    .menu li.active a {
+        color: #B28756;
+        border: 0;
+    }
+
+    .menu .open-menu {
+        width: 40px;
+        height: auto;
+        margin-right: 30px;
+        display: block;
+    }
+
+    .logo {
+        margin-left: 30px;
+    }
+
+    .banner h1, .banner h1 span{
+        font-size: 20px;
+    }
+
+    .banner h2 {
+        font-size: 10px;
+    }
+
+    .section-aboutus {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .section-aboutus--left {
+        margin: 0px 30px 30px 30px;
+    }
+
+    .section-aboutus .section-aboutus--right {
+        width:auto;
+        margin: 0px 30px;
+    }
+    .section-aboutus .section-aboutus--right img {
+        width: 100%;
+    }
+
+    .section-services {
+        flex-wrap: wrap;
+    }
+
+    .section-service {
+        min-width: 100%;
+        margin-top: 20px;
+        border: 0;
+    }
+    
+    .section-service:nth-child(1) {
+        border-left: 0;
+    }
+
+    .section-projects--filters {
+        margin: 0px 30px;
+
+    }
+
+    .section-projects--photo {
+        width: 320px;
+
+    }
+
+    .section-projects--photoarea {
+        width: 300px;
+        height: auto;
+    }
+    
+    
+
+    .section-team {
+        max-width: 300px;
+    }
+    .section-mapa .section-mapa-content .mapa-content {
+        padding: 30px;
+    }
+
+    .section-content-bloc {
+        flex: 1;
+    }
+
+    .section-body.price-flex {
+        flex-direction: column;
+    }
+
+    .section-body .price-options {
+        margin-right: 0;
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+
+    .section-premium--area {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section-premium-book {
+        flex:1;
+        padding: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .section-premium-book img {
+        width: 50%;
+        height: auto;
+        
+    }
+
+    .section-body .section-premium-desc img {
+        margin-right: 20px;
+        margin-left: 10px;
+    }
+    .section-premium-desc--title h1 {
+        font-size: 18px;
+    }
+
+    .section-premium-desc--title p {
+        font-size: 12px;
+    }
+
+    .premium-bg a {
+        padding: 8px 12px;
+        font-size: 8px;
+    }
+
+    .section-empresa  {
+        height: auto;
+        padding: 10px 0px;
+    }
+
+    .section-some-facts {
+        flex-wrap: wrap;
+    }
+
+    .section-facts {
+        height: auto;
+    }
+
+    .section-facts h1 {
+        font-size: 14px;
+    }
+
+    .section-facts p {
+        font-size: 12px;
+    }
+
+    .section-facts .section-facts--number {
+        font-size: 8px;
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+
+    .section-social-container {
+        height: auto;
+        display: f;
+    }
+
+    .section-social-midia {
+        flex-wrap: wrap;
+        margin: auto;
+    }
+
+    .section-social-midia--icons {
+        flex: 1;
+        height: auto;
+        justify-content: center;
+        margin-right: 0;
+    }
+    
+    .section-social-midia--icon {
+        margin-right: 10px;
+    }
+
+    .section-social-midia--icon span {
+        font-size: 8px;
+    }
+    .section-social-midia--icon:nth-child(1) {
+        margin-left: 20px;
+    }
+    .section-social-midia--icon:nth-child(5) {
+        margin-right: 0;
+    }
+
+    section-form-inputs input {
+        width: 70%;
+    }
+
+    .section-form .section-form-inputs  input[placeholder="Name"] {
+        margin: 0;
+    }
+    .section-form .section-form-inputs  input[placeholder="Name"],
+    .section-form .section-form-inputs input[placeholder="Email"],
+    .section-form .section-form-inputs input[placeholder="Subject"],
+    .section-form .section-form-inputs input[placeholder="Message"] {
+        width: 70%;
+        
+    }
+
+    .section-form button {
+        padding: 12px 25px;
+        font-size: 12px;
+    }
+
+    .section-content-bloc-content {
+        margin-left: 15px;
+    }
+
+    footer  {
+        height: auto;
+    }
+    footer .footer-content-all {
+        flex-wrap: wrap;
+    }
+
+    .social-form-content  {
+        padding: 20px;
+    }
+
+    .social-midia-direitos {
+        margin-top: 10px;
+    }
+
+    .social-form-content button {
+        font-size: 10px;
+    }
+}
